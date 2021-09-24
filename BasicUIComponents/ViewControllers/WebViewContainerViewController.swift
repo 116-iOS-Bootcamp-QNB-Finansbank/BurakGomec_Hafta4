@@ -7,21 +7,15 @@
 
 import UIKit
 import WebKit
+import SafariServices
 
 class WebViewContainerViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
+    
     override func viewDidLoad() {
-        super.viewDidLoad() // html content gosterelim font ve font buyuklugunu css ile degistirelim
-
-        // Do any additional setup after loading the view.
-        
-//        let preferences = WKPreferences()
-//        preferences.javaScriptEnabled = true
-//
-//        let configuration = WKWebViewConfiguration()
-//        configuration.preferences = preferences
+        super.viewDidLoad()
         
         activityIndicatorView = UIActivityIndicatorView(style: .medium)
         activityIndicatorView.color = .red
@@ -43,18 +37,35 @@ class WebViewContainerViewController: UIViewController {
         webView.uiDelegate = self
         webView.navigationDelegate = self
     }
+
+    @IBAction func onBackButtonPressed(_ sender: Any) {
+        if self.webView.canGoBack {
+            self.webView.goBack()
+        }
+    }
+    
+    @IBAction func onForwardButtonPressed(_ sender: Any) {
+        if self.webView.canGoForward{
+            self.webView.goForward()
+        }
+    }
+    
+    @IBAction func onRefreshPressed(_ sender: Any) {
+        self.webView.reload()
+    }
+    
+    
+    @IBAction func openInSafari(_ sender: Any) {
+        guard let url = webView.url else { return }
+        let safariVC = SFSafariViewController(url: url)
+        self.present(safariVC, animated: true, completion: nil)
+    }
+
     
     private var activityIndicatorView: UIActivityIndicatorView!
     
     var urlString: String!
-    
-//    override class func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-//        if keyPath == "loading" {
-//            if webView.isLoading {
-//
-//            }
-//        }
-//    }
+
 
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "loading" {

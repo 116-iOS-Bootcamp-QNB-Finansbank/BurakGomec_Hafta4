@@ -1133,25 +1133,49 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heC-Vc-bzu">
-                                <rect key="frame" x="362" y="842" width="36" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="eDE-RQ-A1V"/>
-                                    <constraint firstAttribute="width" constant="36" id="sFo-zl-86N"/>
-                                </constraints>
-                                <state key="normal" image="arrow.clockwise" catalog="system"/>
-                                <connections>
-                                    <action selector="reloadButtonTapped:" destination="nLb-O3-QhO" eventType="touchUpInside" id="bX6-uD-cch"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJQ-OL-JKk">
+                                <rect key="frame" x="0.0" y="817" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem image="chevron.backward" catalog="system" id="6em-ii-O9T" userLabel="BackButton">
+                                        <connections>
+                                            <action selector="onBackButtonPressed:" destination="nLb-O3-QhO" id="FnB-Wx-XSn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="ave-Bp-FbM">
+                                        <color key="tintColor" red="0.84705882349999995" green="0.086274509799999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem image="chevron.forward" catalog="system" id="FnU-RY-FNx" userLabel="ForwardButton">
+                                        <connections>
+                                            <action selector="onForwardButtonPressed:" destination="nLb-O3-QhO" id="qHU-2O-Iy0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="ETX-83-bTj">
+                                        <color key="tintColor" red="0.84705882349999995" green="0.086274509799999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="9Kl-1c-d0Y" userLabel="RefreshButton">
+                                        <connections>
+                                            <action selector="onRefreshPressed:" destination="nLb-O3-QhO" id="1U8-a4-5Db"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="qDt-dq-7xv">
+                                        <color key="tintColor" red="0.84705882349999995" green="0.086274509799999996" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem image="safari.fill" catalog="system" id="xNq-V6-TZ3" userLabel="SafariButton">
+                                        <connections>
+                                            <action selector="openInSafari:" destination="nLb-O3-QhO" id="AiO-aa-1Uy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jQr-r8-1ow"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dJQ-OL-JKk" secondAttribute="bottom" constant="30" id="4x7-ux-OeQ"/>
+                            <constraint firstItem="dJQ-OL-JKk" firstAttribute="leading" secondItem="jQr-r8-1ow" secondAttribute="leading" id="FCR-eO-3Yk"/>
+                            <constraint firstItem="dJQ-OL-JKk" firstAttribute="trailing" secondItem="jQr-r8-1ow" secondAttribute="trailing" id="Iro-1z-OTc"/>
                             <constraint firstItem="jQr-r8-1ow" firstAttribute="bottom" secondItem="Lyh-2d-nYr" secondAttribute="bottom" id="ZWd-Nc-WCh"/>
                             <constraint firstItem="Lyh-2d-nYr" firstAttribute="top" secondItem="jQr-r8-1ow" secondAttribute="top" id="c5Q-zs-gQT"/>
-                            <constraint firstItem="jQr-r8-1ow" firstAttribute="trailing" secondItem="heC-Vc-bzu" secondAttribute="trailing" constant="16" id="gXi-gy-ENR"/>
-                            <constraint firstItem="heC-Vc-bzu" firstAttribute="bottom" secondItem="jQr-r8-1ow" secondAttribute="bottom" constant="16" id="hPQ-hI-d6w"/>
                             <constraint firstItem="jQr-r8-1ow" firstAttribute="trailing" secondItem="Lyh-2d-nYr" secondAttribute="trailing" id="hPo-P1-eu9"/>
                             <constraint firstItem="Lyh-2d-nYr" firstAttribute="leading" secondItem="jQr-r8-1ow" secondAttribute="leading" id="skA-o1-WIg"/>
                         </constraints>
@@ -1163,11 +1187,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gax-Nh-aov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="-24"/>
+            <point key="canvasLocation" x="1256.521739130435" y="-24.107142857142858"/>
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.forward" catalog="system" width="96" height="128"/>
+        <image name="safari.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
