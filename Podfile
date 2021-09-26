@@ -7,6 +7,8 @@ target 'BasicUIComponents' do
 
   # Pods for BasicUIComponents
 #	pod 'Alamofire', '~> 5.4' #hero framework cok basit sekilde ui animasyonlari
+pod 'Hero'
+
 
   target 'BasicUIComponentsTests' do
     inherit! :search_paths

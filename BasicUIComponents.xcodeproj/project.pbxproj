@@ -42,6 +42,11 @@
 		23E507A826EDE7AB00596FFF /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E507A726EDE7AB00596FFF /* DetailTableViewController.swift */; };
 		3CE3334820FFFEE3DDC40478 /* Pods_BasicUIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69D87B716563C9AFAE033D5 /* Pods_BasicUIComponents.framework */; };
 		49F3BC48181FC5C3B8253869 /* Pods_BasicUIComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57A09C56A1D516050E769A6 /* Pods_BasicUIComponentsTests.framework */; };
+		67099A272700FDE100648C34 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099A262700FDE100648C34 /* MoviesModel.swift */; };
+		67099A292701020B00648C34 /* TransitiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67099A282701020B00648C34 /* TransitiveCollectionViewCell.swift */; };
+		670E714D26FF7B5A000B045C /* TransitiveCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670E714C26FF7B5A000B045C /* TransitiveCollectionViewController.swift */; };
+		672394C326FE815D00E62A44 /* Hero2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672394C226FE815D00E62A44 /* Hero2ViewController.swift */; };
+		6796D6F726FE7DCF00EA9FA3 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6796D6F626FE7DCF00EA9FA3 /* HeroViewController.swift */; };
 		844B97D25D38BA508D226CD5 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E7823DBD8440F9D6C91F45 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +111,11 @@
 		23E507A726EDE7AB00596FFF /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		2BF0B027E7BDA91E31AD673B /* Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig"; path = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		60B7DEBC2A4E4D398D96DDA2 /* Pods-BasicUIComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67099A262700FDE100648C34 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		67099A282701020B00648C34 /* TransitiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitiveCollectionViewCell.swift; sourceTree = "<group>"; };
+		670E714C26FF7B5A000B045C /* TransitiveCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitiveCollectionViewController.swift; sourceTree = "<group>"; };
+		672394C226FE815D00E62A44 /* Hero2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero2ViewController.swift; sourceTree = "<group>"; };
+		6796D6F626FE7DCF00EA9FA3 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		7FE3DD153E9AB7D6EE18F3FD /* Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		84E7823DBD8440F9D6C91F45 /* Pods_BasicUIComponents_BasicUIComponentsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicUIComponents_BasicUIComponentsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B7FD32C5C2D81966ADC503 /* Pods-BasicUIComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-BasicUIComponentsTests/Pods-BasicUIComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +189,7 @@
 				2319174126EE020000617A9E /* CustomTableViewCell.swift */,
 				2319174226EE020000617A9E /* CustomTableViewCell.xib */,
 				2319175226EE146000617A9E /* CustomCollectionViewCell.swift */,
+				67099A282701020B00648C34 /* TransitiveCollectionViewCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -212,6 +223,9 @@
 				232D1B2326F6004600196177 /* TabBarContainerViewController.swift */,
 				232D1B2526F6005700196177 /* WebViewContainerViewController.swift */,
 				237B95AA26F72B4F00815A6D /* CoreDataViewController.swift */,
+				6796D6F626FE7DCF00EA9FA3 /* HeroViewController.swift */,
+				672394C226FE815D00E62A44 /* Hero2ViewController.swift */,
+				670E714C26FF7B5A000B045C /* TransitiveCollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +264,7 @@
 		23A2AA7726E4D504009310F0 /* BasicUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				67099A252700FDD500648C34 /* Model */,
 				237B95AF26F74D6B00815A6D /* BasicUIComponents.entitlements */,
 				2373D01A26F719BD0090868F /* Utils */,
 				2319174026EE018A00617A9E /* Cells */,
@@ -294,6 +309,14 @@
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
+		67099A252700FDD500648C34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67099A262700FDE100648C34 /* MoviesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,6 +328,7 @@
 				23A2AA7126E4D504009310F0 /* Sources */,
 				23A2AA7226E4D504009310F0 /* Frameworks */,
 				23A2AA7326E4D504009310F0 /* Resources */,
+				0E56CB155045D6171124D1D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,6 +369,7 @@
 				23A2AA9226E4D507009310F0 /* Sources */,
 				23A2AA9326E4D507009310F0 /* Frameworks */,
 				23A2AA9426E4D507009310F0 /* Resources */,
+				458A802278AF8BEC3B7EA67F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -430,6 +455,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E56CB155045D6171124D1D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents/Pods-BasicUIComponents-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		458A802278AF8BEC3B7EA67F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicUIComponents-BasicUIComponentsUITests/Pods-BasicUIComponents-BasicUIComponentsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBB037D047850312896C3B68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,18 +571,23 @@
 				23A2AA7D26E4D504009310F0 /* LabelAndTextFieldViewController.swift in Sources */,
 				23E5078026EC95C900596FFF /* MyLabel.swift in Sources */,
 				232D1B2626F6005700196177 /* WebViewContainerViewController.swift in Sources */,
+				670E714D26FF7B5A000B045C /* TransitiveCollectionViewController.swift in Sources */,
+				672394C326FE815D00E62A44 /* Hero2ViewController.swift in Sources */,
 				237B95AB26F72B4F00815A6D /* CoreDataViewController.swift in Sources */,
 				23E5078E26ECC2B500596FFF /* ScrollViewController.swift in Sources */,
 				2319175126EE11E700617A9E /* DetailCollectionViewController.swift in Sources */,
 				23ABDDB226F5E3BD00168F99 /* PageViewController.swift in Sources */,
 				2319173F26EDEFCF00617A9E /* UIColor+.swift in Sources */,
 				2373D01C26F719ED0090868F /* MyComponent.swift in Sources */,
+				6796D6F726FE7DCF00EA9FA3 /* HeroViewController.swift in Sources */,
 				23E5077E26EC943500596FFF /* MyButton.swift in Sources */,
 				2319174326EE020000617A9E /* CustomTableViewCell.swift in Sources */,
 				23A2AA7926E4D504009310F0 /* AppDelegate.swift in Sources */,
 				232D1B1F26F5F52400196177 /* MapViewController.swift in Sources */,
 				23E507A826EDE7AB00596FFF /* DetailTableViewController.swift in Sources */,
 				23E507A626EDE65900596FFF /* HomeTableViewController.swift in Sources */,
+				67099A272700FDE100648C34 /* MoviesModel.swift in Sources */,
+				67099A292701020B00648C34 /* TransitiveCollectionViewCell.swift in Sources */,
 				23E5078C26ECB48900596FFF /* CalculatorViewController.swift in Sources */,
 				23A2AA7B26E4D504009310F0 /* SceneDelegate.swift in Sources */,
 				232D1B2426F6004600196177 /* TabBarContainerViewController.swift in Sources */,

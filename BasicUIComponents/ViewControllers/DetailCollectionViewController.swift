@@ -93,6 +93,7 @@ class DetailCollectionViewController: UIViewController {
     }
     
     private func createCompositionalLayout() -> UICollectionViewLayout {
+        
         return UICollectionViewCompositionalLayout { (section, enviroment) -> NSCollectionLayoutSection in
             switch section {
             case 0: return self.firstLayoutSection()

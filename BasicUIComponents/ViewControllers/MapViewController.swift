@@ -39,7 +39,6 @@ class MapViewController: UIViewController {
         case .authorizedAlways, .authorizedWhenInUse:
             locationManager.requestLocation()
         case .denied, .restricted:
-            print("DENİED")
             showSettingsPopUp()
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
